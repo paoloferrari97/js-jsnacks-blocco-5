@@ -106,3 +106,21 @@ function giraParola(parola) {
 var parolaInserita = prompt("Inserisci una parola!").toLowerCase();
 
 console.log(giraParola(parolaInserita));
+
+
+
+//Snack 4:
+//Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi)
+//prendendo alternativamente gli elementi da uno e dall’altro
+//es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+var arrayUno = ["a", "b", "c", "d", "e"];
+var arrayDue = [1, 2, 3, 4, 5];
+var arrayComune = [];
+
+for (var i = 0; i < arrayUno.length; i++){ //arrayUno.length = arrayDue.length
+    arrayComune.push(arrayUno[i]);
+    arrayComune.push(arrayDue[i]);
+}
+
+console.log(arrayComune);
