@@ -92,3 +92,17 @@ for (var i = 0; i < magQuindici.length; i++){
 }
 
 console.log(pesoMinQuin, pesoMagQuin);
+
+
+
+//Snack 3:
+//Scrivi una funzione che accetti una stringa come argomento
+//e la ritorni girata(es.Ciao -> oaiC)
+
+function giraParola(parola) {
+    return parola.split("").reverse().join("");
+}
+
+var parolaInserita = prompt("Inserisci una parola!").toLowerCase();
+
+console.log(giraParola(parolaInserita));
