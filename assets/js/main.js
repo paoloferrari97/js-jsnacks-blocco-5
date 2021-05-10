@@ -62,3 +62,33 @@ for (var i = 0; i < zucchine.length; i++){
 }
 
 console.log(pesoTot);
+
+
+
+//Snack 2:
+//Crea 10 oggetti che rappresentano una zucchina.
+//Dividi in due array separati le zucchine che misurano meno o più di 15cm.
+//Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+
+var minQuindici = [];
+var magQuindici = [];
+
+for (var i = 0; i < zucchine.length; i++){
+    if (zucchine[i].lunghezza < 15) {
+        minQuindici.push(zucchine[i]);
+    } else {
+        magQuindici.push(zucchine[i]);
+    }
+}
+
+var pesoMinQuin = 0;
+for (var i = 0; i < minQuindici.length; i++){
+    pesoMinQuin += minQuindici[i].peso;
+}
+
+var pesoMagQuin = 0;
+for (var i = 0; i < magQuindici.length; i++){
+    pesoMagQuin += magQuindici[i].peso;
+}
+
+console.log(pesoMinQuin, pesoMagQuin);
