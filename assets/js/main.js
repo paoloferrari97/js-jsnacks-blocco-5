@@ -116,14 +116,17 @@ console.log(giraParola(parolaInserita));
 
 var arrayUno = ["a", "b", "c", "d", "e"];
 var arrayDue = [1, 2, 3, 4, 5];
-var arrayComune = [];
 
-for (var i = 0; i < arrayUno.length; i++){ //arrayUno.length = arrayDue.length
-    arrayComune.push(arrayUno[i]);
-    arrayComune.push(arrayDue[i]);
+function unireArray(array1, array2) {
+    var arrayComune = [];
+    for (var i = 0; i < arrayUno.length; i++){ //arrayUno.length = arrayDue.length
+        arrayComune.push(arrayUno[i]);
+        arrayComune.push(arrayDue[i]);
+    }
+    return arrayComune;
 }
 
-console.log(arrayComune);
+console.log(unireArray(arrayUno, arrayDue));
 
 
 
